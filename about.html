@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Vishal Girijapuram</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PrY+PLT3rXzIs4ozqtdQFzYgL0O9cwFyJWgRYoGr4uaKQ04KgY07FhrSjeicNLvVd1eHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: #F1F8E9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #A5D6A7;
+            border-bottom: solid 5px #2E7D32;
+        }
+        #header .logo {
+            font-size: 1.8em;
+            text-decoration: none;
+            color: #fff;
+        }
+        #header .logo:hover{
+            color: #2E7D32 !important;
+        }
+        #header .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        #header .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #header .menu a:hover {
+            color: #2E7D32 !important;
+            border-bottom-color: #2E7D32 !important;
+        }
+
+        /* Contact Icons in Header */
+         /* Contact Icons in Header */
+        .header-icons a {
+            color: #ffcb05;
+            margin-left: 10px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+            border-bottom-color: #A5D6A7;
+        }
+        .header-icons a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Section Layout */
+        #main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+        #main:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Intro Text Styling */
+        .intro h1 {
+            font-size: 2.5em;
+            color: #2E7D32;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 0 0 20px;
+        }
+
+        /* Subsection Styling */
+        .subsection {
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 4px solid #A5D6A7;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+        .subsection:hover {
+            background-color: #cae4cb ;
+            ;
+
+        }
+        .subsection h2 {
+            color: #2E7D32;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .subsection p {
+            font-size: 1em;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 10px 0;
+        }
+        .subsection ul {
+            list-style-type: square;
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        /* Download Button Styling */
+        .download-resume {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #cae4cb;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+        .download-resume:hover {
+            color: white !important;
+            background-color: #2E7D32;
+            transform: scale(1.05);
+        }
+
+        /* Footer Section */
+        footer {
+            font-size: 0.8em;
+            color: #2E7D32;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+            #header .logo {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+            #header .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #main {
+                text-align: center;
+            }
+            .intro h1 {
+                font-size: 2em;
+            }
+            .intro p {
+                font-size: 1em;
+            }
+            .download-resume {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-icons a {
+                font-size: 1em;
+                margin: 0 5px;
+            }
+            .intro h1 {
+                font-size: 1.8em;
+            }
+            .intro p {
+                font-size: 0.9em;
+            }
+            footer {
+                font-size: 0.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <a href="index.html" class="logo">Vishal Girijapuram</a>
+        <nav class="menu">
+            <a href="about.html">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Technical Skills</a>
+            <a href="certifications.html">Certifications</a>
+            
+            <!-- Contact Icons in Header -->
+            <div class="header-icons">
+                <a href="https://linkedin.com/in/girijapuram-vishal-1521611aa" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+                <a href="tel:+15186067963" class="fas fa-phone" title="Call"></a>
+                <a href="mailto:vishalgirijapuram@gmail.com" class="fas fa-envelope" title="Email"></a>
+                <a href="https://github.com/vishalgirijapuram" target="_blank" class="fab fa-github" title="GitHub"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div id="main">
+        <div class="intro">
+            <h1>About Me</h1>
+            <p>
+                Hello, I'm Vishal Girijapuram, a Data Engineer with more than 4 years of experience in designing, developing, and optimizing scalable data solutions. My career is fueled by a passion for leveraging data to generate actionable insights and support data-driven decision-making across organizations.</p>
+        </div>
+
+        <!-- Professional Summary Section -->
+        <div class="subsection">
+            <h2>Professional Summary</h2>
+            <p>I excel in developing efficient ETL workflows, securing data access, and optimizing data processing pipelines to improve performance and accessibility. My technical skills include advanced SQL, big data technologies such as Hadoop and Spark, and cloud engineering, where I have consistently delivered solutions that reduce processing time and enhance query performance.</p>
+        </div>
+
+        <!-- Core Technical Skills Section -->
+        <div class="subsection">
+            <h2>Core Technical Skills</h2>
+            <p><strong>Data Engineering & ETL:</strong> Expert in tools like Azure Data Factory, Databricks, and Snowflake to automate ETL pipelines and streamline data processing. Skilled in orchestrating large-scale data workflows with an emphasis on optimizing performance and ensuring scalability across cloud environments.</p>
+            <p><strong>Big Data & Cloud:</strong> Proficient in leveraging Azure Databricks, Apache Spark, and Snowflake to perform advanced big data processing and analysis. Experienced in building solutions that handle high-volume data streams, enabling real-time insights and effective decision-making across cloud platforms.</p>
+            <p><strong>Data Warehousing & Analytics:</strong> Strong expertise in Snowflake, building high-performance data warehouses and supporting analytics workloads. I design and implement cloud-based data warehousing solutions that ensure fast querying and seamless integration with other cloud services, enhancing business intelligence capabilities.</p>
+            <p><strong>Data Quality & Optimization:</strong> Adept at implementing data quality checks and validation during transformation processes to ensure clean and accurate data. Skilled in optimizing transformation logic to reduce latency, improve performance, and minimize costs in cloud environments like Azure and Snowflake.</p>
+            <p><strong>Real-Time Data Processing:</strong> Experienced in setting up real-time data transformation pipelines using Databricks and Snowflake Streams, enabling near real-time data processing and delivering up-to-date insights for decision-making. Proficient in handling streaming data and applying transformations on the fly.</p>
+            <p><strong>Performance Tuning & Scalability:</strong> Focused on optimizing data transformations to ensure scalability and high performance. Experienced in partitioning data, applying parallel processing techniques, and using Snowflake’s query optimization features to ensure that large-scale data transformations are processed efficiently.</p>
+            <p><strong>Data Security & Compliance:</strong> Experienced in implementing Azure IAM, encryption protocols, and role-based access control (RBAC) to ensure that data is protected across cloud environments. Skilled in configuring Snowflake’s security features, including user roles and access controls, to maintain data integrity and regulatory compliance.  parallel processing techniques, and using Snowflake’s query optimization features to ensure that large-scale data transformations are processed efficiently.</p>
+        </div>
+
+        <!-- Approach to Data Engineering Section -->
+        <div class="subsection">
+            <h2>Approach to Data Engineering</h2>
+            <p>
+                My approach focuses on problem-solving, efficiency, and collaboration. I design robust data models, optimize query performance, and implement best practices in CI/CD to streamline data operations. Whether it's fine-tuning queries for faster execution or integrating diverse data sources, I am dedicated to delivering impactful results that enhance the overall data architecture.</p>
+        </div>
+
+        <!-- Key Achievements Section -->
+        <div class="subsection">
+            <h2>Key Achievements</h2>
+            <ul>
+                <li>Achieved a 40% reduction in ETL processing time through workflow automation, enabling more agile data processing.</li>
+                <li>Improved query performance by 30% using profiling tools, accelerating analytics and reporting for stakeholders.</li>
+                <li>Developed real-time data transformations that cut processing time by 40% and minimized manual interventions.</li>
+            </ul>
+        </div>
+
+        <!-- Commitment to Learning Section -->
+        <div class="subsection">
+            <h2>Commitment to Learning</h2>
+            <p>I am passionate about continuous learning, consistently updating my skill set with new certifications and technologies. I actively expand my expertise in cloud data solutions, machine learning frameworks, and big data processing to stay at the forefront of the field. By attending industry conferences and participating in online communities, I stay engaged with the latest trends and best practices. This dedication to growth allows me to bring innovative solutions to every project, driving both technical and business success.</p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="subsection">
+            <h2>Education</h2>
+            <p><strong>Master of Science in Data Science</strong> - State University of New York at Albany</p>
+            <p>Advanced coursework in machine learning, big data analytics, and data engineering, equipping me with a strong foundation in data processing, modeling, and visualization.</p>
+            <p><strong>Bachelor of Engineering in Electronics and Communication</strong> - Anurag Group of Institutions</p>
+            <p>Studied core engineering principles with a focus on data transmission, digital systems, and analytics, providing a strong technical base that seamlessly transitioned into my data engineering career.</p>
+        </div>
+
+        <a href="images/Vishal_Resume.pdf" download class="download-resume">Download Resume</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Vishal Girijapuram. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

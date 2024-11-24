@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Vishal Girijapuram</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PrY+PLT3rXzIs4ozqtdQFzYgL0O9cwFyJWgRYoGr4uaKQ04KgY07FhrSjeicNLvVd1eHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Basic Styling */
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: #F1F8E9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #A5D6A7;
+            border-bottom: solid 5px #2E7D32;
+        }
+        #header .logo {
+            font-size: 1.8em;
+            text-decoration: none;
+            color: #fff;
+        }
+        #header .logo:hover{
+            color: #2E7D32 !important;
+        }
+        #header .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        #header .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #header .menu a:hover {
+            color: #2E7D32 !important;
+            border-bottom-color: #2E7D32 !important;
+        }
+
+        /* Contact Icons in Header */
+        .header-icons a {
+            color: #ffcb05;
+            margin-left: 10px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+            border-bottom-color: #A5D6A7;
+        }
+
+
+        /* Main Section Layout */
+        #main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Job Section Styling */
+        .job {
+            padding: 20px;
+            background-color: #A5D6A7 ;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #555;
+            transition: transform 0.3s ease;
+        }
+
+        .job:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .job h2 {
+            font-size: 1.6em;
+            color: #333;
+        }
+        .job p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        /* Footer Styling */
+        footer {
+            font-size: 0.8em;
+            color: #2E7D32;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+            #header .logo {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+            #header .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #header .header-icons {
+                margin-top: 10px;
+            }
+            #main {
+                padding: 20px;
+            }
+            .job h2 {
+                font-size: 1.4em;
+            }
+            .job p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-icons a {
+                font-size: 1em;
+                margin: 0 5px;
+            }
+            .job {
+                padding: 15px;
+            }
+            .job h2 {
+                font-size: 1.2em;
+            }
+            .job p {
+                font-size: 0.9em;
+            }
+            footer {
+                font-size: 0.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <a href="index.html" class="logo">Vishal Girijapuram</a>
+        <nav class="menu">
+            <a href="about.html">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Technical Skills</a>
+            <a href="certifications.html">Certifications</a>
+            
+            <!-- Contact Icons in Header -->
+            <div class="header-icons">
+                <a href="https://linkedin.com/in/girijapuram-vishal-1521611aa" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+                <a href="tel:+15186067963" class="fas fa-phone" title="Call"></a>
+                <a href="mailto:vishalgirijapuram@gmail.com" class="fas fa-envelope" title="Email"></a>
+                <a href="https://github.com/vishalgirijapuram" target="_blank" class="fab fa-github" title="GitHub"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div id="main">
+        <!-- Job Position 1 -->
+        <div class="job">
+            <h2>Data Engineer (Intern) - New York State Energy Research and Development Authority (NYSERDA)</h2>
+            <p><strong>Location:</strong> Albany, New York | <strong>Duration:</strong> JUL 2023 - DEC 2023</p>
+            <p>
+                As a Data Engineer, I design and implement end-to-end data pipelines using Azure Data Factory and Azure Databricks, supporting both real-time and batch processing for enhanced data accessibility. I clean and transform large datasets, applying data scaling techniques to ensure accuracy and integrity. Managing large datasets in Azure Data Lake, I ensure secure and scalable storage for efficient processing. I leverage Azure Databricks for advanced data analytics and machine learning model development. By creating Tableau dashboards, I present insights into diversity, equity, and inclusion trends for business teams. Collaborating with cross-functional teams, I deliver data-driven insights to support DEI strategies. I configure role-based access control (RBAC) and use service principals for secure data access management. My work enables faster querying, reduces storage costs, and ensures data compliance across the Azure platform. I optimize data workflows, increasing efficiency and supporting business requirements.</p>
+        </div>
+
+        <!-- Divider -->
+        <hr class="major" />
+
+        <!-- Job Position 2 -->
+        <div class="job">
+            <h2>Data Engineer - Tata Consultancy Services (TCS)</h2>
+            <p><strong>Location:</strong> Chennai, India | <strong>Duration:</strong> NOV 2020 - JUL 2022</p>
+            <p>
+                As a Data Engineer, I design and develop scalable ETL pipelines using Azure Data Factory (ADF) to automate workflows and integrate multiple data sources. I manage large datasets in Azure Data Lake, ensuring efficient storage and retrieval. Using Azure Databricks, I process and transform data for advanced analytics and machine learning. I collaborate with stakeholders to optimize data models in Azure Synapse Analytics, improving business intelligence performance.
+                
+                I leverage Snowflake for scalable cloud data warehousing, optimizing storage and query performance. Developing Power BI dashboards, I provide real-time insights for data-driven decision-making. I implement CI/CD pipelines with Azure DevOps to streamline deployment and integration. I monitor and optimize data pipelines for cost-efficiency and performance.
+                
+                I ensure data integrity through regular audits and enforce data governance practices. I support security and compliance with RBAC and encryption within Azure services.</p>
+        </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Vishal Girijapuram. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
